@@ -1,0 +1,52 @@
+{
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "bold",
+    "editor.fontSize": 15,
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Evondev Dracula High Contrast",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.glyphMargin": false,
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "workbench.sideBar.location": "right",
+    "window.menuBarVisibility": "compact",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "workbench.activityBar.location": "bottom",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "workbench.productIconTheme": "bootstrap-product-icons",
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "codium.codeCompletion.enable": true,
+    "workbench.tree.enableStickyScroll": false,
+    "git.openRepositoryInParentFolders": "never",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+}
