@@ -1,0 +1,52 @@
+2024-09-06 11:16:14.114 [info] [main] Log level: Info
+2024-09-06 11:16:14.114 [info] [main] Validating found git in: "git"
+2024-09-06 11:16:14.114 [info] [main] Using git "2.46.0" from "git"
+2024-09-06 11:16:14.114 [info] [Model][doInitialScan] Initial repository scan started
+2024-09-06 11:16:14.114 [info] > git rev-parse --show-toplevel [6ms]
+2024-09-06 11:16:14.114 [info] > git rev-parse --git-dir --git-common-dir [5ms]
+2024-09-06 11:16:14.114 [info] [Model][openRepository] Opened repository: /home/rios/.dotfiles
+2024-09-06 11:16:14.115 [info] > git rev-parse --show-toplevel [7ms]
+2024-09-06 11:16:14.116 [info] > git config --get commit.template [16ms]
+2024-09-06 11:16:14.149 [info] > git rev-parse --show-toplevel [20ms]
+2024-09-06 11:16:14.149 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-09-06 11:16:14.158 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [11ms]
+2024-09-06 11:16:14.166 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/rios/.dotfiles/.git/refs/remotes/origin/main'
+2024-09-06 11:16:14.169 [info] > git rev-parse refs/remotes/origin/main [4ms]
+2024-09-06 11:16:14.186 [info] > git status -z -uall [6ms]
+2024-09-06 11:16:14.221 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [24ms]
+2024-09-06 11:16:14.235 [info] > git config --local branch.main.vscode-merge-base [3ms]
+2024-09-06 11:16:14.235 [warning] [Git][config] git config failed: Failed to execute git
+2024-09-06 11:16:14.243 [info] > git config --get commit.template [28ms]
+2024-09-06 11:16:14.253 [info] > git reflog main --grep-reflog=branch: Created from *. [11ms]
+2024-09-06 11:16:14.263 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [12ms]
+2024-09-06 11:16:14.316 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/rios/.dotfiles/.git/refs/remotes/origin/main'
+2024-09-06 11:16:14.318 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [56ms]
+2024-09-06 11:16:14.331 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [5ms]
+2024-09-06 11:16:14.338 [info] > git rev-parse refs/remotes/origin/main [22ms]
+2024-09-06 11:16:14.347 [info] > git config --local branch.main.vscode-merge-base origin/main [9ms]
+2024-09-06 11:16:14.361 [info] > git status -z -uall [16ms] (cancelled)
+2024-09-06 11:16:14.373 [info] > git config --get commit.template [13ms]
+2024-09-06 11:16:14.375 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-09-06 11:16:14.382 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/rios/.dotfiles/.git/refs/remotes/origin/main'
+2024-09-06 11:16:14.384 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2024-09-06 11:16:14.392 [info] > git status -z -uall [2ms]
+2024-09-06 11:16:14.413 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [13ms]
+2024-09-06 11:16:14.424 [info] > git config --local branch.main.vscode-merge-base [3ms]
+2024-09-06 11:16:14.431 [info] > git merge-base refs/heads/main refs/remotes/origin/main [19ms]
+2024-09-06 11:16:14.443 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [3ms]
+2024-09-06 11:16:14.451 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [20ms]
+2024-09-06 11:16:14.454 [info] > git diff --name-status -z --diff-filter=ADMR 135947e3594fbb0a9dc4f41052d208eb11512bcd...refs/remotes/origin/main [3ms]
+2024-09-06 11:16:14.625 [info] > git check-ignore -v -z --stdin [3ms]
+2024-09-06 11:16:15.466 [info] > git config --get commit.template [12ms]
+2024-09-06 11:16:15.469 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-09-06 11:16:15.480 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/rios/.dotfiles/.git/refs/remotes/origin/main'
+2024-09-06 11:16:15.481 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2024-09-06 11:16:15.493 [info] > git status -z -uall [2ms]
+2024-09-06 11:16:15.509 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-09-06 11:16:15.522 [info] > git config --local branch.main.vscode-merge-base [2ms]
+2024-09-06 11:16:15.533 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [1ms]
+2024-09-06 11:16:18.270 [info] > git check-ignore -v -z --stdin [3ms]
+2024-09-06 11:16:20.054 [info] > git check-ignore -v -z --stdin [3ms]
+2024-09-06 11:16:20.617 [info] > git show --textconv :.config/alacritty/alacritty.toml [8ms]
+2024-09-06 11:16:20.618 [info] > git ls-files --stage -- /home/rios/.dotfiles/.config/alacritty/alacritty.toml [2ms]
+2024-09-06 11:16:20.627 [info] > git cat-file -s 2ab49c866cc921ba55d02b091047a04ffe52661e [2ms]

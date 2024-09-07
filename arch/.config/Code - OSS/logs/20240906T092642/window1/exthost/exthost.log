@@ -1,0 +1,9 @@
+2024-09-06 09:26:44.111 [info] Extension host with pid 11002 started
+2024-09-06 09:26:44.111 [info] Skipping acquiring lock for /home/rios/.config/Code - OSS/User/workspaceStorage/803943439ddcdc157ebd96cc2d30156a.
+2024-09-06 09:26:44.322 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-09-06 09:26:44.479 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-09-06 09:26:44.559 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-09-06 09:26:44.595 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-09-06 09:26:44.646 [info] Eager extensions activated
+2024-09-06 09:26:44.682 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-09-06 09:26:44.686 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
