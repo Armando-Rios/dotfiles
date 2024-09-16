@@ -1,5 +1,0 @@
-return {
-    -- autostart
-    nitrogen
-    picom
-}
