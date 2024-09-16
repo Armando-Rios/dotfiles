@@ -8,7 +8,7 @@
     {
       "type": "prompt",
       "alignment": "left",
-      "newline": false,
+      "newline": false  ,
       "segments": [
         {
           "background": "transparent",
@@ -27,21 +27,21 @@
             "macos": "\ue24d"
           },
           "style": "plain",
-          "template": " {{.Icon}} {{if .WSL}}{{end}}\u2800",
+          "template": " {{.Icon}} {{if .WSL}} (WSL){{end}} ",
           "type": "os"
         },
         {
           "background": "p:white",
           "foreground": "p:black",
           "style": "plain",
-          "template": " \udb80\udd8d {{.Name}}\u2800",
+          "template": " 󰆍 {{.Name}} ",
           "type": "shell"
         },
         {
           "background": "#555555",
           "foreground": "p:white",
           "style": "plain",
-          "template": " \uf233  {{.HostName}} \ue0bd \uedc5  {{.UserName}}\u2800",
+          "template": " 󰚗 {{.HostName}} \ue0bd  {{.UserName}} ",
           "type": "session"
         },
         {
@@ -51,7 +51,7 @@
             "branch_icon": " \uf113 \uf418 "
           },
           "style": "plain",
-          "template": "{{.HEAD}}\u2800",
+          "template": "{{.HEAD}} ",
           "type": "git"
         },
         {
