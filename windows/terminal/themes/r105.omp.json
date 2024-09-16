@@ -8,7 +8,7 @@
     {
       "type": "prompt",
       "alignment": "left",
-      "newline": true,
+      "newline": false,
       "segments": [
         {
           "background": "transparent",
@@ -21,27 +21,27 @@
           "background": "#ff81cb",
           "foreground": "p:black",
           "properties": {
-            "windows": "",
-            "linux": "\uf17c",
-            "ubuntu": "\uf31b",
-            "macos": "\uf179"
+            "windows": "\ue24d",
+            "linux": "\ue24d",
+            "ubuntu": "\ue24d",
+            "macos": "\ue24d"
           },
           "style": "plain",
-          "template": " {{.Icon}} {{if .WSL}} (WSL){{end}}\u2800",
+          "template": " {{.Icon}} {{if .WSL}}{{end}}\u2800",
           "type": "os"
         },
         {
           "background": "p:white",
           "foreground": "p:black",
           "style": "plain",
-          "template": " 󰆍 {{.Name}}\u2800",
+          "template": " \udb80\udd8d {{.Name}}\u2800",
           "type": "shell"
         },
         {
           "background": "#555555",
           "foreground": "p:white",
           "style": "plain",
-          "template": " 󰚗 {{.HostName}} \ue0bd  {{.UserName}}\u2800",
+          "template": " \uf233  {{.HostName}} \ue0bd \uedc5  {{.UserName}}\u2800",
           "type": "session"
         },
         {
@@ -59,12 +59,12 @@
           "foreground": "#3C873A",
           "properties": {
             "fetch_package_manager": true,
-            "pnpm_icon": " <#da6933>󰵆</> ",
-            "yarn_icon": " <#348cba></> ",
-            "npm_icon": " <#e21515></> "
+            "pnpm_icon": " <#da6933>\udb83\udd46</> ",
+            "yarn_icon": " <#348cba>\ue6a7</> ",
+            "npm_icon": " <#e21515>\ue5fa</> "
           },
           "style": "plain",
-          "template": "  {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "template": " \ued0d {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "type": "node"
         }
       ]
@@ -83,7 +83,7 @@
             "style": "agnoster_full",
             "home_icon": "\ueb06 ",
             "folder_icon": "\uf07b",
-            "folder_separator_icon": " <#ffffd6>󱧯 </> "
+            "folder_separator_icon": " <#ffffd6>\uf07c </> "
           },
           "template": "<p:white>\u2514</><#ff81cb>[</> {{ .Path }} <#ff81cb>]</>"
         }
@@ -112,4 +112,3 @@
   "final_space": true,
   "version": 2
 }
-
