@@ -8,6 +8,7 @@ Import-Module Terminal-Icons
 
 # Aliases
 Set-Alias vim nvim
+Set-Alias vi nvim
 Set-Alias ll ls
 Set-Alias grep findstr
 Set-Alias tig "C:\Program Files\Git\usr\bin\tig.exe"
