@@ -23,7 +23,7 @@ export LANG=en_US.UTF-8
 
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(oh-my-posh init zsh --config ~/.config/themes/r105.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/r105.omp.json)"
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
