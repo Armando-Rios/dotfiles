@@ -16,6 +16,10 @@
             "keys": "ctrl+v"
         },
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -34,7 +38,8 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "launchMode": "default",
+    "initialCols": 160,
+    "initialRows": 40,
     "newTabMenu": 
     [
         {
@@ -45,19 +50,19 @@
     {
         "defaults": 
         {
-            "adjustIndistinguishableColors": "never",
+            "adjustIndistinguishableColors": "always",
             "antialiasingMode": "grayscale",
-            "colorScheme": "Dracula",
+            "colorScheme": "catppuccin-mocha",
             "experimental.retroTerminalEffect": false,
             "font": 
             {
                 "cellHeight": "1.2",
                 "face": "JetBrainsMono Nerd Font",
                 "size": 12,
-                "weight": "medium"
+                "weight": "bold"
             },
             "intenseTextStyle": "bright",
-            "opacity": 30,
+            "opacity": 10,
             "padding": "10",
             "scrollbarState": "hidden",
             "startingDirectory": "%USERPROFILE%",
@@ -88,34 +93,23 @@
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             }
         ]
     },
     "schemes": 
     [
-        {
-            "background": "#282C34",
-            "black": "#41444D",
-            "blue": "#3476FF",
-            "brightBlack": "#8F9AAE",
-            "brightBlue": "#10B1FE",
-            "brightCyan": "#5FB9BC",
-            "brightGreen": "#3FC56B",
-            "brightPurple": "#FF78F8",
-            "brightRed": "#FF6480",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#F9C859",
-            "cursorColor": "#FFCC00",
-            "cyan": "#4483AA",
-            "foreground": "#B9C0CB",
-            "green": "#25A45C",
-            "name": "BlulocoDark",
-            "purple": "#7A82DA",
-            "red": "#FC2F52",
-            "selectionBackground": "#B9C0CA",
-            "white": "#CDD4E0",
-            "yellow": "#FF936A"
-        },
         {
             "background": "#1E1F29",
             "black": "#000000",
@@ -161,8 +155,7 @@
             "selectionBackground": "#585B70",
             "white": "#BAC2DE",
             "yellow": "#F9E2AF"
-        },
-        
+        }
     ],
     "showTabsInTitlebar": false,
     "showTerminalTitleInTitlebar": false,
