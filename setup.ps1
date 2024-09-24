@@ -30,17 +30,10 @@ function Is-GitInstalled {
 }
 
 function Install-Git {
-    Write-Host " Git no esta instalado. Iniciando instalacion! " -Foreground $textBlack -Background $warning
+    Write-Host " Gir is not installed. starting installation! " -Foreground $textBlack -Background $warning
     winget install --id Git.Git -e
-    Write-Host " Git se ha instalado correctamente. " -ForegroundColor $textBlack -Background $success
 }
 
-if (-not (Is-GitInstalled)) {
-    Install-Git
-    Write-Host " Git se ha instalado correctamente. " -ForegroundColor $textBlack -Background $success
-}
-
-Write-Host " Tareas completadas cierra esta terminal e inicia otra. " -ForegroundColor $textBlack -Background $warning
 
 function Show-SelectionMenu {
     param (
@@ -52,14 +45,14 @@ function Show-SelectionMenu {
     $index = 0
     $maxIndex = $optionList.Length - 1
 
-    Write-Host " RUNNING CONFIGURATION SCRIPT IRA " -ForegroundColor $textBlack -Background $primary
+    Write-Host " RUNNING CONFIGURATION SCRIPT" -ForegroundColor $textBlack -Background $primary
     Write-Host " "
     Write-Host $prompt -ForegroundColor Blue
     Write-Host " Use the up and down arrow keys to navigate. Press [Space] to select/deselect, and [Enter] to continue. " -ForegroundColor $textBlack -Background $secondary
 
     while ($true) { 
         Clear-Host
-        Write-Host " RUNNING CONFIGURATION SCRIPT IRA " -ForegroundColor $textBlack -Background $primary
+        Write-Host " RUNNING CONFIGURATION SCRIPT" -ForegroundColor $textBlack -Background $primary
         Write-Host " "
         Write-Host " Use the up and down arrow keys to navigate. Press [Space] to select/deselect, and [Enter] to continue. " -ForegroundColor $textBlack -Background $secondary
 
@@ -102,14 +95,16 @@ function Show-SelectionMenu {
 
 if (-not (Is-GitInstalled)) {
     Install-Git
-    Write-Host " Git se ha instalado correctamente. " -ForegroundColor $textBlack -Background $success
+    Write-Host " Git has been installed successfully. " -ForegroundColor $textBlack -Background $success
 }
 
 # Primera seccion: Seleccion de tareas
 $tareas = @(
-    "Instalacion completa",
-    "Instalar programas",
-    "Configurar e instalar terminal"
+    "Install a new environment",
+    "Install programs",
+    "Install and customize terminal"
 )
 
-$selectedTareas = Show-SelectionMenu -optionList $tareas -prompt "Seleccionar las tareas que deseas realizar:"
+$selectedTareas = Show-SelectionMenu -optionList $tareas -prompt "Select the areas you want to perform"
+
+Write-Host " Completed tasks close this terminal and start a new. " -ForegroundColor $textBlack -Background $warning
