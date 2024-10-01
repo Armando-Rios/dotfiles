@@ -15,3 +15,9 @@ keymap("n", "<C-a>", "gg<S-v>G") -- select all
 
 -- nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+
+-- telescope
+
+local telescope = require('telescope.builtin')
+keymap("n", "<leader>fg", telescope.live_grep, opts)
+keymap("n", "<leader>p", telescope.find_files, opts)
