@@ -12,3 +12,6 @@ keymap("n", "<leader>Q", ":qa!<CR>", opts)
 
 -- keymap select option
 keymap("n", "<C-a>", "gg<S-v>G") -- select all
+
+-- nvim-tree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
